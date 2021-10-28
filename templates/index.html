@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Nishank Gujar Quiz 4</title>
+</head>
+
+<body>
+
+	<main class="container-fluid" style="width: 70%;">
+		<h1 style="text-align: center;">Student ID : 1001861756</h1>
+		<h1 style="text-align: center;">Name : Nishank Gujar</h1>
+		<hr>
+
+		<h4><b>File List:-</h4></b><br>
+		{% for file in file_list %}
+		<h5>{{file}}</h5>
+		<hr>
+		{% endfor %}
+
+		<form method="POST" action="{{ url_for('results_1') }}">
+			<h3><b>Query #5 </b></h3>
+			<b>Filename:-</b>
+			<input type="text" name="name" placeholder="eg. doc1" /> <br>
+			<b>Text:-</b>
+			<input type="text" name="text" placeholder="eg. This is a terrible example off of bad bad text." />
+			<input class="btn-success" type="submit"><br>
+		</form>
+		<br>
+
+
+		<form method="POST" action="{{ url_for('results_3') }}">
+			<h3><b>Query #6 </b></h3>
+			<b>Alphabetical Order:-</b>
+			<input class="btn-success" type="submit"><br>
+		</form>
+		<br>
+	
+		
+		<form method="POST" action="{{ url_for('results_4') }}">
+			<h3><b>Query #7 </b></h3>
+			<b>Filename:-</b>
+			<input type="text" name="name" placeholder="eg. doc1.txt" /> <br>
+			<b>Remove:-</b>
+			<input type="text" name="text" placeholder="eg. bad" />
+			<input class="btn-success" type="submit"><br>
+		</form>
+		<br>
+
+		<form method="POST" action="{{ url_for('results_3') }}">
+			<h3><b>Query #8 </b></h3>
+			<b>Adjacent Words:-:</b>
+			<input type="text" name="name" placeholder="eg. cloud computing" /> <br>
+			<input class="btn-success" type="submit"><br>
+		</form>
+		<br>
+	
+<br>

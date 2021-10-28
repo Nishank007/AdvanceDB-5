@@ -1,0 +1,6 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7f34dd0a-c43d-41b0-afe3-d681f86c4001/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/asnmtapp1",
+    "appService.deploySubpath": ".",
+    "python.pythonPath": "/Users/chinmay/opt/anaconda3/envs/basic/bin/python",
+    "appService.showBuildDuringDeployPrompt": false
+}
